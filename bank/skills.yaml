@@ -1,0 +1,84 @@
+- id: skill_1
+  section: Skills
+  text: "Python"
+  tags: [programming, backend]
+  priority: 0.95
+
+- id: skill_2
+  section: Skills
+  text: "JavaScript"
+  tags: [programming, frontend]
+  priority: 0.9
+
+- id: skill_3
+  section: Skills
+  text: "AWS"
+  tags: [cloud, infrastructure]
+  priority: 0.85
+
+- id: skill_4
+  section: Skills
+  text: "Docker"
+  tags: [devops, containerization]
+  priority: 0.8
+
+- id: skill_5
+  section: Skills
+  text: "Kubernetes"
+  tags: [devops, orchestration]
+  priority: 0.75
+
+- id: skill_6
+  section: Skills
+  text: "PostgreSQL"
+  tags: [database, sql]
+  priority: 0.85
+
+- id: skill_7
+  section: Skills
+  text: "Redis"
+  tags: [database, caching]
+  priority: 0.8
+
+- id: skill_8
+  section: Skills
+  text: "FastAPI"
+  tags: [framework, api]
+  priority: 0.85
+
+- id: skill_9
+  section: Skills
+  text: "React"
+  tags: [framework, frontend]
+  priority: 0.8
+
+- id: skill_10
+  section: Skills
+  text: "Git"
+  tags: [version-control, tools]
+  priority: 0.9
+
+- id: skill_11
+  section: Skills
+  text: "Jenkins"
+  tags: [ci-cd, tools]
+  priority: 0.75
+
+- id: skill_12
+  section: Skills
+  text: "Terraform"
+  tags: [iac, devops]
+  priority: 0.7
+
+- id: skill_13
+  section: Skills
+  text: "MongoDB"
+  tags: [database, nosql]
+  priority: 0.7
+
+- id: skill_14
+  section: Skills
+  text: "GraphQL"
+  tags: [api, query-language]
+  priority: 0.65
+

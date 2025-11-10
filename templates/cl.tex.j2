@@ -1,0 +1,66 @@
+% Project:  TeX Cover Letter Template
+% Author:   Sid Lacy
+% Modified for AIDA-based cover letter generation
+
+\documentclass[12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{eso-pic}
+\usepackage{charter}
+\usepackage{tabularx}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+\definecolor{gr}{RGB}{225,225,225}
+
+
+\begin{document}
+
+% Header
+\begin{tabularx}{\linewidth}{@{} C @{}}
+{\Huge {{ profile.name }} }\\[7.5pt]
+{% if profile.github %}\href{https://{{ profile.github }}}{\raisebox{-0.05\height}\faGithub\ {{ profile.github.split('/')[-1] }}}{% endif %}{% if profile.github and profile.linkedin %} \ $|$ \ {% endif %}{% if profile.linkedin %}\href{https://{{ profile.linkedin }}}{\raisebox{-0.05\height}\faLinkedin\ {{ profile.linkedin.split('/')[-1] }}}{% endif %}{% if (profile.github or profile.linkedin) and profile.email %} \ $|$ \ {% endif %}{% if profile.email %}\href{mailto:{{ profile.email }}}{\raisebox{-0.05\height}\faEnvelope\ {{ profile.email }}}{% endif %}{% if profile.email and profile.phone %} \ $|$ \ {% endif %}{% if profile.phone %}\href{tel:{{ profile.phone }}}{\raisebox{-0.05\height}\faMobile\ {{ profile.phone }}}{% endif %} \\
+\end{tabularx}
+
+\vspace{0.2in}
+
+% Opening block
+\today\\
+
+\vspace{-0.1in}Dear Hiring Manager,\\
+
+\vspace{-0.1in}\setlength\parindent{24pt}
+\noindent
+
+% Attention paragraph
+{{ cover_letter_content.paragraph_1 }}
+
+% Interest paragraph
+\vspace{0.1in}
+{{ cover_letter_content.paragraph_2 }}
+
+% Desire paragraph
+\vspace{0.1in}
+{{ cover_letter_content.paragraph_3 }}
+
+% Action paragraph
+\vspace{0.1in}
+{{ cover_letter_content.paragraph_4 }}
+
+% Closer
+\vspace{0.1in}
+\vfill
+
+\begin{flushleft}
+Kind Regards,
+
+{{ profile.name }}\\
+\end{flushleft}
+
+\end{document}
+

@@ -1,0 +1,19 @@
+- id: sb_1
+  text: "Concerns of reservation: Non-linear career path — experience across entrepreneurship, AI, and academic research can be read as breadth over focus, especially by firms seeking narrow specialisation."
+  tags: ["career path"]
+
+- id: sb_2
+  text: "Concerns of reservation: Limited big-brand validation — despite strong skillset, absence of recent Tier-1 fund or bank on CV may cause conservative recruiters to undervalue experience depth."
+  tags: ["employer recognition"]
+
+- id: sb_3
+  text: "Concerns of reservation: Perceived cultural or communication gap — as a Chinese professional in Swiss/European settings, subtle doubts may arise around integration, assertiveness, or client-facing comfort."
+  tags: ["culture gap"]
+
+- id: sb_4
+  text: "Concerns of reservation: Overqualification signal — holding advanced degrees (ETH, HSG) and extensive self-driven projects may trigger concerns about fit or long-term retention in execution-heavy roles."
+  tags: ["overqualificaation"]
+
+- id: sb_5
+  text: "Concerns of reservation: Narrative cohesion — without an explicit storyline linking finance, coding, and GenAI as one evolving pursuit, recruiters may struggle to see the single core identity behind multiple roles."
+  tags: ["incoherent storyline"]

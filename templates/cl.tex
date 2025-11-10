@@ -1,0 +1,87 @@
+% Project:  TeX Cover Letter Template
+% Author:   Sid Lacy
+
+% EDIT info.tex, body.tex
+
+\documentclass[12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{eso-pic}
+\usepackage{charter}
+
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+\definecolor{gr}{RGB}{225,225,225}
+
+% Edit the following
+
+% Personal information
+\newcommand{\myname}{John Doe} % Your name (e.g. "John Smith")
+\newcommand{\mytitle}{Applicant} % Your title (e.g. "Applicant")
+\newcommand{\myemail}{john@johndoe.com} % Your email (e.g. "me@mydomain.com")
+\newcommand{\mylinkedin}{johndoe} % Your LinkedIn profile name (e.g. "myname")
+\newcommand{\myphone}{123.456.7890} % Your phone number (e.g. "123.456.7890")
+\newcommand{\mylocation}{City, ST} % Your general location (e.g. "PNW, USA")
+\newcommand{\recipient}{Hiring Manager} % The recipient (e.g. "Hiring Manager")
+\newcommand{\greeting}{Dear} % The greeting to use (e.g. "Dear")
+\newcommand{\closer}{Kind Regards} % The closer to use (e.g. "Kind Regards")
+
+% Company information
+\newcommand{\company}{Microsoft Corporation} % The company (e.g. "Microsoft Corporation")
+\newcommand{\street}{1 Microsoft Way} % The company's street address (e.g. "1 Microsoft Way")
+\newcommand{\city}{Redmond} % The company's city (e.g. "Redmond")
+\newcommand{\state}{WA} % The company's state prefix (e.g. "WA")
+\newcommand{\zip}{98052} % The company's zip code (e.g. "98052")
+
+
+\begin{document}
+
+% Shaded header banner
+\AddToShipoutPictureBG{%
+\color{gr}
+\AtPageUpperLeft{\rule[-1.3in]{\paperwidth}{1.3in}}
+}
+
+% Header
+\begin{center}
+{\fontsize{28}{0}\selectfont\scshape \myname}
+
+\href{mailto:\myemail}{\faEnvelope\enspace \myemail}\hfill
+\href{https://linkedin.com/in/\mylinkedin}{\faLinkedinIn\enspace linkedin.com/in/\mylinkedin}\hfill
+\href{tel:\myphone}{\faPhone\enspace \myphone}\hfill
+\faMapMarker\enspace \mylocation
+\end{center}
+
+\vspace{0.2in}
+
+% Opening block
+\today\\
+
+\vspace{-0.1in}\recipient\\
+\company\\
+\street\\
+\city, \state\ \zip\\
+
+\vspace{-0.1in}\greeting\ \recipient,\\
+
+% Body
+\vspace{-0.1in}\setlength\parindent{24pt}
+\noindent
+
+xxxx
+
+% Closer
+\vspace{0.1in}
+\vfill
+
+\begin{flushleft}
+\closer,
+
+\myname\\
+\mytitle
+\end{flushleft}
+
+\end{document}

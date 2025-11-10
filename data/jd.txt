@@ -1,0 +1,64 @@
+Zurcher Kantonalbank logo
+Zurcher Kantonalbank
+Share
+Show more options
+Data Scientist AI/GenAI (w/m/d) 
+Zurich, Zurich, Switzerland · Reposted 2 days ago · Over 100 people clicked apply
+Promoted by hirer · Responses managed off LinkedIn
+ 
+Hybrid
+
+ Full-time
+Matches your job preferences, job type is Full-time.
+
+Apply
+ 
+Save
+Save Data Scientist AI/GenAI (w/m/d)  at Zurcher Kantonalbank
+See how you compare to over 100 others who clicked apply
+
+Access exclusive applicant insights, see jobs where you have the highest chance of hearing back, and more.
+
+Retry Premium for CHF0
+People you can reach out to
+
+
+
+Curdin and others in your network
+
+Show all
+About the job
+80% - 100% | IT / Business Engineering | Zürich | Berufserfahrene
+
+Im Bereich Strategy, Risk & Analytics der Zürcher Kantonalbank unterstützen wir die Geschäftseinheit IT, Operations & Real Estate im Bereich der Strategie, Finanzen, IT-Provider- sowie IT-Risk-Management. Als Business Portfolio Manager treiben wir die Implementierung der Strategie in verschieden Umsetzungsgefässen (ART) voran. Zusätzlich verantworten wir die AI-Strategie der Bank und stellen deren wirkungsvolle Umsetzung sicher.
+
+Du möchtest deine Erfahrungen und Fähigkeiten in einem dynamischen Team einbringen und die Künstliche Intelligenz im Einsatz bei der Zürcher Kantonalbank mitgestalten? Dann bist du bei uns genau richtig.
+
+Deine Aufgaben
+
+Entwicklung und Konzeption von GenAI-Lösungen: Entwerfen und Umsetzen von GenAI-Lösungen (einschliesslich RAG und KI-Agents) in enger Zusammenarbeit mit Data Engineers und Fachexperten. Ziel ist es, die Feinheiten der Daten sowie den geschäftlichen Kontext zu verstehen, um sicherzustellen, dass die entwickelten Modelle und Lösungen gezielt auf die relevanten geschäftlichen Herausforderungen ausgerichtet sind. 
+Anforderungsdefinition und Erfolgsmessung: Enge Zusammenarbeit mit Stakeholdern, um Anforderungen klar zu definieren und messbare Leistungskennzahlen (KPIs) für den Business Case zu entwickeln. 
+Prototyping und Integration:Schwerpunkt auf der Entwicklung von Prototypen. Zusammenarbeit mit ML- und Cloud-Engineers sowie Fullstack-Entwicklern, um GenAI-Lösungen nahtlos in die bestehende GenAI-Plattform zu integrieren. Dabei werden LLMOps-Tools konfiguriert, um die Leistung der Modelle zu bewerten und zu optimieren. Gleichzeitig werden Schutzmassnahmen für Compliance und verantwortungsvolle KI-Praktiken implementiert. 
+Modell-Training und Optimierung: Auswahl, Training und Fine-Tuning grosser Sprachmodelle (LLMs) auf bankfachlichen Daten, um spezifische Anforderungen der Branche zu erfüllen. Nutzung von Techniken wie Prompt Engineering, RAG und Knowledge Distillation, um die Leistung und Präzision der Modelle kontinuierlich zu verbessern.
+
+Dein Profil
+
+Berufserfahrung als Data Scientist, GenAI Engineer, in den Themen KI, ML oder datengetriebene Produkte sowie in der Konzeption und Begleitung der Umsetzung von KI-Anwendungen 
+Kenntnisse und Erfahrung mit Azure Cloud, LLM, OpenAI und ML-OPS 
+Ein agiles Mindset sowie eine innovative Arbeitsweise nach SAFe/Scrum sind für dich selbstverständlich 
+Deine ausgeprägten Kommunikationsfähigkeiten ermöglichen dir einen adressatengerechten Umgang mit diversen Stakeholdern 
+Du punktest mit deiner strukturierten sowie systematischen Herangehensweise und probierst gerne Neues aus
+
+Unser Angebot
+
+Aufgabenbereich, der dir die Chance gibt, eigenverantwortlich deine Themen weiterzubringen 
+Wir investieren viel in unsere Mitarbeitenden und bieten entsprechende Weiterbildungsangebote 
+Deine Kolleginnen, Kollegen und Stakeholder sitzen alle im selben Haus, im Homeoffice oder im Haus über die Strasse – ohne Zeitunterschied 
+Deine Work-Life-Balance liegt uns am Herzen und auch als Elternteil möchten wir dich bei deiner Teilzeitkarriere fördern 
+Attraktives Gesamtpaket mit interessanten Nebenleistungen und Mitarbeitervergünstigungen (Sport, Freizeit, Kinderbetreuung, Krankenkasse)
+
+Lianna Müller
+
+freut sich, dir zu helfen.
+
+Telefon: 044 292 28 89

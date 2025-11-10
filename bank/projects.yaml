@@ -1,0 +1,18 @@
+- id: proj_1
+  section: Projects
+  text: "Built a real-time recommendation system serving 1M+ users with 99.9% uptime using Python and Redis"
+  tags: [ml, python, redis, scalability]
+  priority: 0.9
+
+- id: proj_2
+  section: Projects
+  text: "Developed a REST API for financial data processing handling 10K requests/second using FastAPI and PostgreSQL"
+  tags: [api, fastapi, postgresql, performance]
+  priority: 0.85
+
+- id: proj_3
+  section: Projects
+  text: "Created a mobile app using React Native with 50K+ downloads and 4.5 star rating"
+  tags: [mobile, react-native, frontend]
+  priority: 0.7
+

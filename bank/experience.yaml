@@ -1,0 +1,18 @@
+- id: exp_1
+  section: Experience
+  text: "Led a team of 5 engineers to deliver a microservices architecture, reducing deployment time by 40%"
+  tags: [leadership, architecture, microservices]
+  priority: 0.9
+
+- id: exp_2
+  section: Experience
+  text: "Implemented CI/CD pipeline using Jenkins and Docker, improving release frequency from monthly to weekly"
+  tags: [devops, ci-cd, docker]
+  priority: 0.8
+
+- id: exp_3
+  section: Experience
+  text: "Optimized database queries reducing response time by 60% and cutting infrastructure costs by $50K annually"
+  tags: [database, optimization, cost]
+  priority: 0.85
+

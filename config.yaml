@@ -1,0 +1,18 @@
+max_retry_loops: 1
+caps:
+  experience: 6
+  projects: 2
+  skills: 12
+model:
+  provider: "openai"
+  name: "gpt-4o-mini"
+  temperature: 0.1
+templating:
+  template_path: "templates/resume.tex.j2"
+  cover_letter_template_path: "templates/cl.tex.j2"
+paths:
+  bank_dir: "bank"
+  profile: "data/profile.yaml"
+  jd: "data/jd.txt"
+  out_dir: "out"
+
