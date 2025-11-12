@@ -46,12 +46,18 @@ def run(state: State, config: dict) -> State:
     
     jd_text = f"""Company: {jd_summary['company']}
                     Role: {jd_summary['role']}
+                    Hiring Manager: {jd_summary['hr']}
                     Key Skills Required: {', '.join(jd_summary.get('skills', []))}
                     Must Haves: {', '.join(jd_summary.get('must_haves', []))}
                     Nice to Haves: {', '.join(jd_summary.get('nice_to_haves', []))}
                     Responsibilities: {', '.join(jd_summary.get('responsibilities', []))}"""
     
-    user_prompt = f"""Write a professional, one-page cover letter (at least 800 words) for the following job application using the AIDA method. Return strict JSON only with the following structure:
+    user_prompt = f"""Write a professional cover letter (about 600 words) for the following job application using the AIDA method. 
+
+    Four paragraphs: 1. it's about the company and the role. 2. it's about me. 3. it's about what sets me apart for the role. 4. it's about the call to action.
+    
+    
+    Return strict JSON only with the following structure:
     {{
         "paragraph_1": "...",
         "paragraph_2": "...",
@@ -70,12 +76,12 @@ def run(state: State, config: dict) -> State:
                 Requirements:
                 1. Use AIDA structure (Attention, Interest, Desire, Action)
                 3. Incorporate relevant material from the personal bank naturally
-                4. Tailor content to the specific role and company
-                5. Show enthusiasm and professionalism, Make it personal but professional
+                4. Tailor content to the specific role and responsibilities of the job description.
+                5. Show enthusiasm and professionalism
                 6. Do not focus on the past, this cover letter focuses on the future.
-                7. Ideally we should do story telling of telling a story.
-                8. We should try to address the stumbling blocks in the cover letter.
-                9. Start right with the content, not the salutation. And do not end with the closer.
+                7. do story telling if possible.
+                8. try to address the stumbling blocks. But: No negativity even it is to address the concerns, phrase it positively.
+                9. Start with the content, not the salutation. And do not end with the closer.
 
                 Return only valid JSON with 4 paragraphs, no other text."""
                     

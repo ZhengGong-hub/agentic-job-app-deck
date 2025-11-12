@@ -34,8 +34,18 @@ def run(state: State, config: dict) -> State:
         "skills": [],
         "responsibilities": [],
         "must_haves": [],
-        "nice_to_haves": []
+        "nice_to_haves": [],
+        "hr": "",
+        "address": "",
+        "zip": "",
+        "city": ""
         }}
+
+        "hr" is the assumed Ms./Mr. (do assume the gender!) + last name of the hiring manager if available, otherwise "Hiring Manager".
+
+        "address" is the address of the company if available, otherwise "xxxxxxx x".
+        "zip" is the zip code of the company if available, otherwise "1000".
+        "city" is the city of the company if available, otherwise "Zurich".
 
         Job Description:
         {state["jd_raw"]}
@@ -50,6 +60,10 @@ def run(state: State, config: dict) -> State:
             responsibilities=result.get("responsibilities", []),
             must_haves=result.get("must_haves", []),
             nice_to_haves=result.get("nice_to_haves", []),
+            hr=result.get("hr", "Hiring Manager"),
+            address=result.get("address", "xxxxxxx x"),
+            zip=result.get("zip", "1000"),
+            city=result.get("city", "Zurich"),
         )
     logger.info(f"Parsed JD: {state['jd_summary']['role']} at {state['jd_summary']['company']}")
     return state

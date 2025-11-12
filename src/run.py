@@ -7,6 +7,7 @@ from adapters.storage_yaml import load_profile, load_bank, load_jd, load_cl_bank
 from domain.state import State
 from app.graph import create_graph
 from app.graph_cl import create_cover_letter_graph
+import yaml
 
 logger = setup_logger(__name__)
 
@@ -66,13 +67,11 @@ def main():
         artifacts = final_state.get("artifacts", {})
         cl_path = artifacts.get("cover_letter", "")
         
-        if cl_path:
-            logger.info(f"Exported cover letter to: {cl_path}")
-            print(f"\n✓ Cover letter exported to: {cl_path}")
-        else:
-            logger.error("No cover letter artifacts produced")
-            print("✗ Error: No cover letter artifacts produced")
-            sys.exit(1)
+        logger.info(f"Exported cover letter to: {cl_path}")
+        # save the final_state to a yaml file
+        with open("out/final_state.yaml", "w") as f:
+            yaml.dump(final_state, f)
+
     else:
         logger.info(f"Loaded JD, profile, and {len(bank)} bank items")
         
