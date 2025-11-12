@@ -19,7 +19,7 @@
   tags: [beautiful quotes]
 
 - id: cl_4
-  text: "Over the past years, I’ve developed a strong habit of thinking through prototypes — treating them as the fastest way to learn what works. At Keyoniq, I built MVPs and PoCs around RAG systems, agentic architectures, and KG–driven retrieval. In financial research, I applied large language models to design and test trading signals at scale. And outside of work, I continue to prototype for curiosity’s sake — from personalized task agents to an agentic cover letter and résumé generator I’m currently building."
+  text: "Over the past years, I've developed a strong habit of thinking through prototypes — treating them as the fastest way to learn what works. At Keyoniq, I built MVPs and PoCs around RAG systems, agentic architectures, and KG-driven retrieval. In financial research, I applied large language models to design and test trading signals at scale. And outside of work, I continue to prototype for curiosity's sake — from personalized task agents to an agentic cover letter and résumé generator I'm currently building."
   tags: [genai experience, prototype experience]
 
 - id: cl_5

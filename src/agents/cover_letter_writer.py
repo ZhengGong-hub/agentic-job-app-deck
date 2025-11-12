@@ -2,6 +2,7 @@
 from domain.state import State
 from adapters.llm_openai import OpenAIClient
 from infra.logging import setup_logger
+import json
 
 logger = setup_logger(__name__)
 
@@ -23,10 +24,10 @@ def run(state: State, config: dict) -> State:
         logger.error("JD summary not available")
         return state
     
-    model_config = config.get("model", {})
+    model_config = config.get("cl_model")
     client = OpenAIClient(
-        model_name=model_config.get("name", "gpt-4o"),
-        temperature=model_config.get("temperature", 0.1),
+        model_name=model_config.get("name"),
+        temperature=model_config.get("temperature"),
     )
     
     system_prompt = """You are an expert cover letter writer. Write a compelling one-page cover letter using the AIDA method:
@@ -38,11 +39,9 @@ def run(state: State, config: dict) -> State:
     jd_summary = state["jd_summary"]
     profile = state["profile"]
     cl_bank = state.get("cl_bank")
-    
-    # Format cl_bank items
-    cl_material = "\n\nPersonal material to incorporate (use these naturally in the letter):\n"
-    for item in cl_bank:
-        cl_material += f"- {item.get('text', '')}\n"
+
+    content = json.dumps(cl_bank['content'])
+    stumbling_block = json.dumps(cl_bank['stumbling_block'])
     
     jd_text = f"""Company: {jd_summary['company']}
                     Role: {jd_summary['role']}
@@ -54,36 +53,38 @@ def run(state: State, config: dict) -> State:
     
     user_prompt = f"""Write a professional cover letter (about 600 words) for the following job application using the AIDA method. 
 
-    Four paragraphs: 1. it's about the company and the role. 2. it's about me. 3. it's about what sets me apart for the role. 4. it's about the call to action.
-    
-    
-    Return strict JSON only with the following structure:
-    {{
-        "paragraph_1": "...",
-        "paragraph_2": "...",
-        "paragraph_3": "...",
-        "paragraph_4": "..."
-    }}
+        Four paragraphs: 1. it's about the company and the role. 2. it's about me. 3. it's about what sets me apart for the role. 4. it's about the call to action.
+        
+        
+        Return strict JSON only with the following structure:
+        {{
+            "paragraph_1": "...",
+            "paragraph_2": "...",
+            "paragraph_3": "...",
+            "paragraph_4": "..."
+        }}
 
-                Job Description Summary:
-                {jd_text}
+        Job Description Summary:
+        {jd_text}
 
-                Applicant Profile:
-                Name: {profile.get('name', '')}
-                Background: {profile.get('summary', '')}
-                {cl_material}
+        Applicant Profile:
+        Name: {profile.get('name', '')}
+        
+        Personal material to incorporate (use these naturally in the letter):
+        Content: {content}
+        Stumbling Block: {stumbling_block}
 
-                Requirements:
-                1. Use AIDA structure (Attention, Interest, Desire, Action)
-                3. Incorporate relevant material from the personal bank naturally
-                4. Tailor content to the specific role and responsibilities of the job description.
-                5. Show enthusiasm and professionalism
-                6. Do not focus on the past, this cover letter focuses on the future.
-                7. do story telling if possible.
-                8. try to address the stumbling blocks. But: No negativity even it is to address the concerns, phrase it positively.
-                9. Start with the content, not the salutation. And do not end with the closer.
+        Requirements:
+        1. Use AIDA structure (Attention, Interest, Desire, Action)
+        3. Incorporate relevant material from the personal bank naturally
+        4. Tailor content to the specific role and responsibilities of the job description.
+        5. Show enthusiasm and professionalism
+        6. Do not focus on the past, this cover letter focuses on the future.
+        7. do story telling if possible.
+        8. try to address the stumbling blocks. But: No negativity even it is to address the concerns, phrase it positively.
+        9. Start with the content, not the salutation. And do not end with the closer.
 
-                Return only valid JSON with 4 paragraphs, no other text."""
+        Return only valid JSON with 4 paragraphs, no other text."""
                     
     result = client.chat_completion_json(system_prompt, user_prompt)
     state["cover_letter_content"] = {

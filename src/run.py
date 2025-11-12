@@ -8,6 +8,9 @@ from domain.state import State
 from app.graph import create_graph
 from app.graph_cl import create_cover_letter_graph
 import yaml
+import uuid
+from pathlib import Path
+from datetime import datetime
 
 logger = setup_logger(__name__)
 
@@ -24,18 +27,27 @@ def main():
     
     # Load configuration
     config = load_config("config.yaml")
+
+    # for each unique run, create a new out directory under the out directory
+    out_dir = Path(config.get("paths").get("out_dir")) / str(datetime.now().strftime("%Y%m%d_%H%M%S"))
+    config.get("paths")["out_dir"] = out_dir 
+    out_dir.mkdir(exist_ok=True)
+
     logger.info("Loaded configuration")
     
     # Load data
-    paths = config.get("paths", {})
-    jd_raw = load_jd(paths.get("jd", "data/jd.txt"))
-    profile = load_profile(paths.get("profile", "data/profile.yaml"))
-    bank = load_bank(paths.get("bank_dir", "bank"))
-    
+    paths = config.get("paths")
+    jd_raw = load_jd(paths.get("jd"))
+    profile = load_profile(paths.get("profile"))
+    bank = load_bank(paths.get("bank_dir"))
+
+    # Load cover letter bank
+    cl_bank = load_cl_bank(paths.get("cl_bank_dir"))
+
     # Initialize state
     state: State = {
         "jd_raw": jd_raw,
-        "jd_summary": None,
+        "jd_summary": None, # will be populated by the jd_parser agent
         "bank": bank,
         "profile": profile,
         "plan": None,
@@ -44,7 +56,7 @@ def main():
         "critic_result": None,
         "latex_ctx": None,
         "cover_letter_content": None,
-        "cl_bank": [],
+        "cl_bank": cl_bank,
         "artifacts": {},
         "config": config,
         "meta": {"retry_count": 0, "errors": []},
@@ -52,9 +64,6 @@ def main():
     
     if generate_cover_letter:
         logger.info("Generating cover letter...")
-        # Load cover letter bank
-        state["cl_bank"] = load_cl_bank(paths.get("bank_dir", "bank"))
-        logger.info(f"Loaded {len(state['cl_bank'])} cover letter bank items")
         
         # Compile and run cover letter graph
         logger.info("Compiling cover letter graph...")
@@ -62,14 +71,9 @@ def main():
         
         logger.info("Running cover letter pipeline...")
         final_state = graph.invoke(state)
-        
-        # Print results
-        artifacts = final_state.get("artifacts", {})
-        cl_path = artifacts.get("cover_letter", "")
-        
-        logger.info(f"Exported cover letter to: {cl_path}")
+
         # save the final_state to a yaml file
-        with open("out/final_state.yaml", "w") as f:
+        with open(out_dir / "final_state.yaml", "w") as f:
             yaml.dump(final_state, f)
 
     else:

@@ -59,7 +59,7 @@ class State(TypedDict):
     critic_result: Optional[CriticResult]
     latex_ctx: Optional[Dict[str, Any]]
     cover_letter_content: Optional[CoverLetterContent]
-    cl_bank: List[Dict[str, Any]]  # Cover letter bank items
+    cl_bank: Dict[str, List[Dict[str, Any]]]  # Cover letter bank items
     artifacts: Dict[str, str]  # e.g., {"tex": "path/to/file.tex", "explain": "path/to/explain.json", "cover_letter": "path/to/cover_letter.tex"}
     config: Dict[str, Any]
     meta: Dict[str, Any]  # e.g., retry_count, errors

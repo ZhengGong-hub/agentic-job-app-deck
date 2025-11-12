@@ -7,12 +7,16 @@ model:
   provider: "openai"
   name: "gpt-4o-mini"
   temperature: 0.1
+cl_model:
+  name: "gpt-4.1"
+  temperature: 0.1
 templating:
   template_path: "templates/resume.tex.j2"
   cover_letter_template_path: "templates/cl.tex.j2"
 paths:
   bank_dir: "bank"
-  profile: "data/profile.yaml"
+  cl_bank_dir: "cl_bank"
+  profile: "bank/profile.yaml"
   jd: "data/jd.txt"
   out_dir: "out"
 

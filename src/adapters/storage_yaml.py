@@ -2,7 +2,9 @@
 import yaml
 from pathlib import Path
 from typing import List, Dict, Any
+from infra.logging import setup_logger
 
+logger = setup_logger(__name__)
 
 def load_profile(profile_path: str) -> Dict[str, Any]:
     """
@@ -54,34 +56,36 @@ def load_jd(jd_path: str) -> str:
         return f.read()
 
 
-def load_cl_bank(bank_dir: str) -> list:
+def load_cl_bank(cl_bank_dir: str) -> dict:
     """
     Load cover letter bank YAML file.
     
     Args:
-        bank_dir: Directory containing bank YAML files
-        
+        cl_bank_dir: Directory containing cl bank YAML files
+
     Returns:
-        List of cover letter bank items
+        Dictionary containing "content" and "stumbling_block" items
     """
     
-    bank_path = Path(bank_dir)
-    cl_file = bank_path / "cl.yaml"
-    sb_file = bank_path / "stumbling_block.yaml"
+    cl_bank_path = Path(cl_bank_dir)
+    content_file = cl_bank_path / "content.yaml"
+    sb_file = cl_bank_path / "stumbling_block.yaml"
     
-    if not cl_file.exists():
-        raise FileNotFoundError(f"Cover letter bank file not found: {cl_file}! Please create a cl.yaml file in the bank directory.")
+    if not content_file.exists():
+        raise FileNotFoundError(f"Cover letter bank file not found: {content_file}! Please create a content.yaml file in the bank directory.")
+    else:
+        with open(content_file, "r") as f:
+            content_items = yaml.safe_load(f)
+            
     if not sb_file.exists():
         raise FileNotFoundError(f"Stumbling block bank file not found: {sb_file}! Please create a stumbling_block.yaml file in the bank directory.")
-    
-    items = []
-    with open(cl_file, "r") as f:
-        cl_items = yaml.safe_load(f)
-        if isinstance(cl_items, list):
-            items.extend(cl_items)
-    with open(sb_file, "r") as f:
-        sb_items = yaml.safe_load(f)
-        if isinstance(sb_items, list):
-            items.extend(sb_items)
-    return items
+    else:
+        with open(sb_file, "r") as f:
+            stumbling_block_items = yaml.safe_load(f)
+            
+    logger.info(f"Loaded {len(content_items)} content and {len(stumbling_block_items)} stumbling block files")
 
+    return {
+        "content": content_items,
+        "stumbling_block": stumbling_block_items,
+    }

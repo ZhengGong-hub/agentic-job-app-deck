@@ -11,6 +11,8 @@
 \usepackage{eso-pic}
 \usepackage{charter}
 \usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
 
 % centered version of 'X' col. type
 \newcolumntype{C}{>{\centering\arraybackslash}X} 
@@ -18,11 +20,18 @@
 \addtolength{\textheight}{1.0in}
 \definecolor{gr}{RGB}{225,225,225}
 
+% Page header
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\textit{Application to {{ jd_summary.company }} --- {{ jd_summary.role }}}}
+\renewcommand{\headrulewidth}{0.4pt}
+\setlength{\headsep}{0.3in}
+
 \begin{document}
 
 % Header
 \begin{tabularx}{\linewidth}{@{} C @{}}
-{\Huge {{ profile.name }} }\\[7.5pt]
+{\Large {{ profile.name }} }\\[7.5pt]
 \faMapMarker\ {{ profile.address }} \ $|$ \ \href{mailto:{{ profile.email }}}{\raisebox{-0.05\height}\faEnvelope\ {{ profile.email }}} \ $|$ \ \href{tel:{{ profile.phone }}}{\raisebox{-0.05\height}\faMobile\ {{ profile.phone }}} \\
 \end{tabularx}
 
@@ -62,4 +71,3 @@ Kind Regards,\\
 \end{flushleft}
 
 \end{document}
-
