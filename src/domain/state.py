@@ -24,13 +24,12 @@ class BankItem(TypedDict):
 class SelectedItem(TypedDict):
     """Selected item with reasoning."""
     id: str
-    reason: str
+    text: str
 
 
 class SelectionResult(TypedDict):
     """Result from ranker agent."""
     selected: Dict[str, List[SelectedItem]]
-    missing_topics: List[str]
 
 
 class CriticResult(TypedDict):
@@ -63,4 +62,6 @@ class State(TypedDict):
     artifacts: Dict[str, str]  # e.g., {"tex": "path/to/file.tex", "explain": "path/to/explain.json", "cover_letter": "path/to/cover_letter.tex"}
     config: Dict[str, Any]
     meta: Dict[str, Any]  # e.g., retry_count, errors
+    ranked: Optional[Dict[str, SelectionResult]]
+    assembled: Optional[Dict[str, List[str]]]
 

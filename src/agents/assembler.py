@@ -11,45 +11,18 @@ def run(state: State, config: dict) -> State:
     
     Args:
         state: Current state with selected items and bank
-        config: Configuration with caps
+        config: Configuration
         
     Returns:
         Updated state with assembled lists
     """
     logger.info("Assembling final sections...")
-    
-    caps = config.get("caps", {})
-    bank_dict = {item["id"]: item for item in state["bank"]}
-    
-    # Initialize with expected sections (empty lists)
-    assembled = {
-        "Experience": [],
-        "Projects": [],
-        "Skills": [],
-        "Achievements": [],
-    }
-    
-    if not state.get("selected"):
-        logger.error("Selected items not available")
-        state["assembled"] = assembled
-        return state
-    
-    selected = state["selected"].get("selected", {})
-    
-    for section, selected_items in selected.items():
-        section_items = []
-        cap = caps.get(section.lower(), float("inf"))
-        
-        for selected_item in selected_items[:cap]:  # Enforce cap
-            item_id = selected_item["id"]
-            if item_id in bank_dict:
-                section_items.append(bank_dict[item_id]["text"])
-            else:
-                logger.warning(f"Selected item ID {item_id} not found in bank")
-        
-        assembled[section] = section_items
-        logger.info(f"Assembled {len(section_items)} items for {section}")
-    
-    state["assembled"] = assembled
-    return state
 
+    work_indices = config.get("work_experience").keys()
+    assembled = dict.fromkeys(work_indices, [])
+    for work in work_indices:
+        text = [item["text"] for item in state['ranked'][work]['selected']]
+        assembled[work] = text
+    state['assembled'] = assembled
+    logger.info(f"Assembled {len(assembled)} items")
+    return state

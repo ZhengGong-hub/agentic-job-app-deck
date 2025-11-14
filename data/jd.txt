@@ -1,64 +1,79 @@
-Zurcher Kantonalbank logo
-Zurcher Kantonalbank
-Share
-Show more options
-Data Scientist AI/GenAI (w/m/d) 
-Zurich, Zurich, Switzerland · Reposted 2 days ago · Over 100 people clicked apply
-Promoted by hirer · Responses managed off LinkedIn
- 
-Hybrid
-
- Full-time
-Matches your job preferences, job type is Full-time.
+Quantitative Trader
+DRW · Singapore, Singapore (On-site)
 
 Apply
  
 Save
-Save Data Scientist AI/GenAI (w/m/d)  at Zurcher Kantonalbank
-See how you compare to over 100 others who clicked apply
+Save Quantitative Trader  at DRW
+Show more options
+See recent hiring trends for DRW Holdings, LLC
 
 Access exclusive applicant insights, see jobs where you have the highest chance of hearing back, and more.
 
 Retry Premium for CHF0
 People you can reach out to
-
-
-
-Curdin and others in your network
+ETH Zürich logo
+ETH Zürich logo
+School alumni from ETH Zürich
 
 Show all
 About the job
-80% - 100% | IT / Business Engineering | Zürich | Berufserfahrene
+DRW is a diversified trading firm with over 3 decades of experience bringing sophisticated technology and exceptional people together to operate in markets around the world. We value autonomy and the ability to quickly pivot to capture opportunities, so we operate using our own capital and trading at our own risk.
 
-Im Bereich Strategy, Risk & Analytics der Zürcher Kantonalbank unterstützen wir die Geschäftseinheit IT, Operations & Real Estate im Bereich der Strategie, Finanzen, IT-Provider- sowie IT-Risk-Management. Als Business Portfolio Manager treiben wir die Implementierung der Strategie in verschieden Umsetzungsgefässen (ART) voran. Zusätzlich verantworten wir die AI-Strategie der Bank und stellen deren wirkungsvolle Umsetzung sicher.
+We operate with respect, curiosity and open minds. The people who thrive here share our belief that it’s not just what we do that matters–it's how we do it. DRW is a place of high expectations, integrity, innovation and a willingness to challenge consensus.
 
-Du möchtest deine Erfahrungen und Fähigkeiten in einem dynamischen Team einbringen und die Künstliche Intelligenz im Einsatz bei der Zürcher Kantonalbank mitgestalten? Dann bist du bei uns genau richtig.
+Cumberland - a DRW Company is the cryptoasset arm of DRW, established in 2014 after early interest in cryptoassets and their underlying technology. Today, Cumberland is a global leader in cryptoassets, uniquely positioned between the traditional financial markets and the cryptoasset ecosystem. From our offices around the world, we provide 24-hour access to a wide array of cryptoassets while helping the crypto ecosystem grow and evolve in a responsible, sustainable way.
 
-Deine Aufgaben
+As a Cryptoassets Trader, you will have an opportunity to combine the disciplines of risk management, research and technology to execute cryptoasset trading strategies. You will be tasked with managing counterparty relationships and executing trades. You will work closely with experienced traders, business development teams and quantitative researchers to help identify trading opportunities and manage the cryptoasset portfolio.
 
-Entwicklung und Konzeption von GenAI-Lösungen: Entwerfen und Umsetzen von GenAI-Lösungen (einschliesslich RAG und KI-Agents) in enger Zusammenarbeit mit Data Engineers und Fachexperten. Ziel ist es, die Feinheiten der Daten sowie den geschäftlichen Kontext zu verstehen, um sicherzustellen, dass die entwickelten Modelle und Lösungen gezielt auf die relevanten geschäftlichen Herausforderungen ausgerichtet sind. 
-Anforderungsdefinition und Erfolgsmessung: Enge Zusammenarbeit mit Stakeholdern, um Anforderungen klar zu definieren und messbare Leistungskennzahlen (KPIs) für den Business Case zu entwickeln. 
-Prototyping und Integration:Schwerpunkt auf der Entwicklung von Prototypen. Zusammenarbeit mit ML- und Cloud-Engineers sowie Fullstack-Entwicklern, um GenAI-Lösungen nahtlos in die bestehende GenAI-Plattform zu integrieren. Dabei werden LLMOps-Tools konfiguriert, um die Leistung der Modelle zu bewerten und zu optimieren. Gleichzeitig werden Schutzmassnahmen für Compliance und verantwortungsvolle KI-Praktiken implementiert. 
-Modell-Training und Optimierung: Auswahl, Training und Fine-Tuning grosser Sprachmodelle (LLMs) auf bankfachlichen Daten, um spezifische Anforderungen der Branche zu erfüllen. Nutzung von Techniken wie Prompt Engineering, RAG und Knowledge Distillation, um die Leistung und Präzision der Modelle kontinuierlich zu verbessern.
+What You’ll Do In This Role
 
-Dein Profil
+Assist with management of OTC trading flow from new and existing counterparties
+Execute cryptoasset trades electronically and manually
+Assist in managing and optimizing the risk of the cryptoasset portfolio
+Work directly with other DRW traders and cryptoasset researchers to gain market knowledge and expertise
+Communicate closely with our other offices on varying workflow initiatives and trades
+Identify and capture current opportunities
+Research and introduce new trading strategies
+Work with a variety of internal teams (research, relationship management, operations, etc.) to ensure proper trade flow and settlement
+Monitor open positions and execution in our trading systems
+Adjust system parameters based on market conditions
+Communicate relevant market events to team members
+Contribute to all aspects of the trading desk activities including position reconciliation, risk management tasks and post-trade analysis
 
-Berufserfahrung als Data Scientist, GenAI Engineer, in den Themen KI, ML oder datengetriebene Produkte sowie in der Konzeption und Begleitung der Umsetzung von KI-Anwendungen 
-Kenntnisse und Erfahrung mit Azure Cloud, LLM, OpenAI und ML-OPS 
-Ein agiles Mindset sowie eine innovative Arbeitsweise nach SAFe/Scrum sind für dich selbstverständlich 
-Deine ausgeprägten Kommunikationsfähigkeiten ermöglichen dir einen adressatengerechten Umgang mit diversen Stakeholdern 
-Du punktest mit deiner strukturierten sowie systematischen Herangehensweise und probierst gerne Neues aus
+Requirements
 
-Unser Angebot
+BS, MS, and/or PhD with strong academic results in Mathematics, Statistics, Physics, Science, Engineering, or Computer Science
+Market making experience for crypto currency on exchange or bilaterally
+Previous screen trading or trading assistant experience
+Strong quantitative and analytical skills
+Meticulous attention to details and accuracy in work
+Excellent verbal and written communication skills, with the ability to effectively interact with counterparties and internal stakeholders
+Ability to adapt in a fast-paced, collaborative, and results-oriented environment, and thrive under time-sensitive and high-pressure situations
+Self-starter with strong proactivity, sets ambitious goals, willingness to drive and own projects, and proactively identifies opportunities for impact
 
-Aufgabenbereich, der dir die Chance gibt, eigenverantwortlich deine Themen weiterzubringen 
-Wir investieren viel in unsere Mitarbeitenden und bieten entsprechende Weiterbildungsangebote 
-Deine Kolleginnen, Kollegen und Stakeholder sitzen alle im selben Haus, im Homeoffice oder im Haus über die Strasse – ohne Zeitunterschied 
-Deine Work-Life-Balance liegt uns am Herzen und auch als Elternteil möchten wir dich bei deiner Teilzeitkarriere fördern 
-Attraktives Gesamtpaket mit interessanten Nebenleistungen und Mitarbeitervergünstigungen (Sport, Freizeit, Kinderbetreuung, Krankenkasse)
+Bonus Points For
 
-Lianna Müller
+Experience with liquidity provisioning on dex
+A passion for cryptoassets and the role they play in global markets
 
-freut sich, dir zu helfen.
+Why Join DRW-Cumberland
 
-Telefon: 044 292 28 89
+At DRW-Cumberland, we are committed to creating a workplace that inspires and empowers our employees with impactful responsibilities quickly. You will have the opportunity to be creative and entrepreneurial to solve fascinating problems, capture valuable opportunities, and directly influence the future of the business. Our collaborative environment promotes innovation and continuous learning, making DRW-Cumberland a dynamic place to grow your career.
+
+If you are ready to take on this exciting challenge, apply now and become a part of our forward-thinking team at DRW-Cumberland.
+
+For more information about DRW's processing activities and our use of job applicants' data, please view our Privacy Notice at https://drw.com/privacy-notice.
+
+ California residents, please review the California Privacy Notice for information about certain legal rights at https://drw.com/california-privacy-notice.
+
+Job search faster with Premium
+
+Access company insights like strategic priorities, headcount trends, and more
+
+
+
+
+Khaliunaa and millions of other members use Premium
+Retry Premium for CHF0
+Get 1 month free. Cancel anytime. 

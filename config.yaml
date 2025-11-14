@@ -1,17 +1,17 @@
 max_retry_loops: 1
 caps:
-  experience: 6
+  experience: 4
   projects: 2
   skills: 12
 model:
   provider: "openai"
-  name: "gpt-4o-mini"
-  temperature: 0.1
+  name: "gpt-4o"
+  temperature: 0
 cl_model:
   name: "gpt-4.1"
   temperature: 0.1
 templating:
-  template_path: "templates/resume.tex.j2"
+  cv_template_path: "templates/resume.tex.j2"
   cover_letter_template_path: "templates/cl.tex.j2"
 paths:
   bank_dir: "bank"
@@ -19,4 +19,9 @@ paths:
   profile: "bank/profile.yaml"
   jd: "data/jd.txt"
   out_dir: "out"
+# ---- cv specification ---- #
+works: [work1, work2]
+work_experience:
+  work1: "bank/work_experience_contents/w1.yaml"
+  work2: "bank/work_experience_contents/w2.yaml"
 

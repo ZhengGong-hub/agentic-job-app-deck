@@ -5,7 +5,7 @@ from domain.state import State
 from agents import jd_parser, ranker, assembler, critic, exporter
 
 
-def create_graph(config: Dict[str, Any]):
+def create_cv_graph(config: Dict[str, Any]):
     """
     Create and compile the CV tailoring graph.
     

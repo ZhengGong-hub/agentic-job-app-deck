@@ -6,6 +6,8 @@
 \usepackage{url}
 \usepackage{parskip} 	
 
+%tabularx environment
+\usepackage{tabularx}
 %other packages for formatting
 \RequirePackage{color}
 \RequirePackage{graphicx}
@@ -87,34 +89,13 @@
 {% if profile.github %}\href{https://{{ profile.github }}}{\raisebox{-0.05\height}\faGithub\ {{ profile.github.split('/')[-1] }}}{% endif %}{% if profile.github and profile.linkedin %} \ $|$ \ {% endif %}{% if profile.linkedin %}\href{https://{{ profile.linkedin }}}{\raisebox{-0.05\height}\faLinkedin\ {{ profile.linkedin.split('/')[-1] }}}{% endif %}{% if (profile.github or profile.linkedin) and profile.email %} \ $|$ \ {% endif %}{% if profile.email %}\href{mailto:{{ profile.email }}}{\raisebox{-0.05\height}\faEnvelope\ {{ profile.email }}}{% endif %}{% if profile.email and profile.phone %} \ $|$ \ {% endif %}{% if profile.phone %}\href{tel:{{ profile.phone }}}{\raisebox{-0.05\height}\faMobile\ {{ profile.phone }}}{% endif %} \\
 \end{tabularx}
 
-\section*{Summary}
-{{ profile.summary }}
-
-\section*{Experience}
-\begin{itemize}[leftmargin=*,nosep]
-{% for item in Experience %}
+\section*{Work Experience}
+{% for work_key in works %}
+\begin{joblong}{\textbf {{ profile[work_key]['title'] }}\normalfont, {{ profile[work_key]['name'] }}, {{ profile[work_key]['city'] }}}{\normalfont {{ profile[work_key]['time'] }}}
+{% for item in selected[work_key] %}
 \item {{ item }}
 {% endfor %}
-\end{itemize}
-
-\section*{Projects}
-\begin{itemize}[leftmargin=*,nosep]
-{% for item in Projects %}
-\item {{ item }}
+\end{joblong}
 {% endfor %}
-\end{itemize}
-
-\section*{Skills}
-{% for skill in Skills %}{{ skill }}{% if not loop.last %}, {% endif %}{% endfor %}
-
-{% if Achievements %}
-\section*{Achievements}
-\begin{itemize}[leftmargin=*,nosep]
-{% for item in Achievements %}
-\item {{ item }}
-{% endfor %}
-\end{itemize}
-{% endif %}
-
 \end{document}
 

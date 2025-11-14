@@ -54,7 +54,9 @@ def run(state: State, config: dict) -> State:
         "jd_summary": state.get("jd_summary"),
         "cover_letter_content": state.get("cover_letter_content"),
     }
-    audit_path = out_dir / "audit.json"
+    audit_path = out_dir / "audit_cl.json"
     with open(audit_path, "w") as f:
-        json.dump(audit_data, f, indent=2)    
+        json.dump(audit_data, f, indent=2)   
+
+    logger.info(f"Exported audit.json to {cl_path}")
     return state

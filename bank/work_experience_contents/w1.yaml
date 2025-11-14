@@ -1,0 +1,30 @@
+- id: exp_1
+  text: |
+    Keyoniq is a AI startup under a renowned hospital group, where we are tasked to build an end-to-end clinical decision support system powered by GenAI. 
+    The company's mission is to integrate clinical data, medical guidelines, and large volumes of scientific literature into reasoning-capable AI workflows that support physicians in diagnostics, treatment planning, and documentation. 
+  tags: ["company description"]
+
+- id: exp_2
+  text: | 
+    Led the end-to-end development of MVPs, covering everything from data orchestration to model prompting, evaluation, and selection. 
+    This included building large-scale OpenAI Batch-API workflows for automated inference; implementing multi-hop RAG pipelines combining vector search, prompt-chaining, and document re-ranking;  and constructing a domain-specific knowledge graph from over two million medical papers to ground clinical reasoning in verified scientific evidence. 
+  tags: ["hard skills", "genai", "rag", "kg", "MCP", "agentic"]
+
+- id: exp_3
+  text: |
+    Implemented responsible and compliant AI safeguards across the development lifecycle, ensuring high requirement of alignment and traceability. 
+    This included designing audit trails for data provenance and model decisions; integrating explainability techniques to allow clinicians to understand model outputs;
+    and establishing validation processes to evaluate model behaviour, edge cases, and failure modes. 
+  tags: ["responsible_ai", "compliance", "governance"]
+
+- id: exp_4
+  text: |
+    Led a dev team of four to design and deliver a CrewAI- and LangGraph-powered agentic workflow PoC within two months, generating personalized medical recommendations through multi-step reasoning and structured tool use. 
+  tags: ["hard skills", "genai", "rag", "kg", "MCP", "agentic"]
+
+- id: exp_5
+  text: | 
+    Delivered structured progress updates to the parent company's executives, translating complex GenAI, safety, and workflow-performance milestones into clear business implications. 
+    The strategic reports and live presentations for C-level stakeholders helped aligning product with investment expectations; 
+    These communication processes directly contributed to Keyoniq successfully meeting its investment milestones, resulting in a committed USD 2 million per year investment, with 20% of the annual budget allocated specifically to AI tool development and expansion.
+  tags: ["soft skills", "communication", "business"]
