@@ -3,6 +3,7 @@ from domain.state import State, SelectionResult, SelectedItem
 from adapters.llm_openai import OpenAIClient
 from infra.logging import setup_logger
 from utils.work_experience_ranker import rank_and_select_work_experience
+from utils.edu_experience_ranker import rank_and_select_edu_experience
 
 logger = setup_logger(__name__)
 
@@ -20,10 +21,9 @@ def run(state: State, config: dict) -> State:
     """
     logger.info("Ranking and selecting items from bank...")
 
-    # Initialize with expected sections (empty lists)
     work_indices = config.get("work_experience").keys()
-
-    ranked = dict.fromkeys(work_indices, [])
+    edu_indices = config.get("edu_experience").keys()
+    ranked = dict.fromkeys(list(work_indices) + list(edu_indices), [])
 
     #  ----- work experience contents ----- #
     for work in work_indices:
@@ -35,7 +35,18 @@ def run(state: State, config: dict) -> State:
                 for item in selected
             ]
         )
-        
+    
+    #  ----- education experience contents ----- #
+    # not that this part does not need GenAI, so we can just use the bank items directly
+    for education in edu_indices:
+        selected = rank_and_select_edu_experience(state, config, education)
+        ranked[education] = SelectionResult(
+            selected=[
+                SelectedItem(id=item["id"], text=item["text"])
+                for item in selected
+            ]
+        )
+
     logger.info(f"Ranked {len(ranked)} items")
 
     state["ranked"] = ranked

@@ -24,4 +24,7 @@ works: [work1, work2]
 work_experience:
   work1: "bank/work_experience_contents/w1.yaml"
   work2: "bank/work_experience_contents/w2.yaml"
-
+educations: [edu1, edu2, edu3]
+edu_experience:
+  edu2: "bank/edu_experience_contents/e2.yaml"
+  edu3: "bank/edu_experience_contents/e3.yaml"

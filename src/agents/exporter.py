@@ -35,6 +35,7 @@ def run(state: State, config: dict) -> State:
         "jd_summary": jd_summary,
         "selected": state["assembled"],
         "works": config.get("works"),
+        "educations": config.get("educations"),
     }
     state["latex_ctx"] = latex_ctx
     

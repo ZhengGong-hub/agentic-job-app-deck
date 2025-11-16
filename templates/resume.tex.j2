@@ -85,7 +85,7 @@
 
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-{\Huge {{ profile.name }} }\\[7.5pt]
+{\Large {{ profile.name }} }\\[7.5pt]
 {% if profile.github %}\href{https://{{ profile.github }}}{\raisebox{-0.05\height}\faGithub\ {{ profile.github.split('/')[-1] }}}{% endif %}{% if profile.github and profile.linkedin %} \ $|$ \ {% endif %}{% if profile.linkedin %}\href{https://{{ profile.linkedin }}}{\raisebox{-0.05\height}\faLinkedin\ {{ profile.linkedin.split('/')[-1] }}}{% endif %}{% if (profile.github or profile.linkedin) and profile.email %} \ $|$ \ {% endif %}{% if profile.email %}\href{mailto:{{ profile.email }}}{\raisebox{-0.05\height}\faEnvelope\ {{ profile.email }}}{% endif %}{% if profile.email and profile.phone %} \ $|$ \ {% endif %}{% if profile.phone %}\href{tel:{{ profile.phone }}}{\raisebox{-0.05\height}\faMobile\ {{ profile.phone }}}{% endif %} \\
 \end{tabularx}
 
@@ -93,9 +93,20 @@
 {% for work_key in works %}
 \begin{joblong}{\textbf {{ profile[work_key]['title'] }}\normalfont, {{ profile[work_key]['name'] }}, {{ profile[work_key]['city'] }}}{\normalfont {{ profile[work_key]['time'] }}}
 {% for item in selected[work_key] %}
-\item {{ item }}
+\item {{ item }}{% endfor %} \end{joblong}
 {% endfor %}
+
+\section*{Education}
+% if selected[edu_key] is not empty, then use joblong, otherwise use jobshort
+{% for edu_key in educations %} {% if selected[edu_key] %}
+\begin{joblong}{\textbf {{ profile[edu_key]['title'] }}\normalfont, {{ profile[edu_key]['name'] }}, {{ profile[edu_key]['city'] }}}{\normalfont {{ profile[edu_key]['time'] }}}
+{% for item in selected[edu_key] %}
+\item {{ item }} {% endfor %}
 \end{joblong}
-{% endfor %}
+{% else %}
+\begin{jobshort}{\textbf {{ profile[edu_key]['title'] }}\normalfont, {{ profile[edu_key]['name'] }}, {{ profile[edu_key]['city'] }}}{\normalfont {{ profile[edu_key]['time'] }}}\end{jobshort} {% endif %} {% endfor %}
+
+\section*{Skills}
+
 \end{document}
 

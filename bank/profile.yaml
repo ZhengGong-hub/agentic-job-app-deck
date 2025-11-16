@@ -5,6 +5,22 @@ location: "Zurich, Switzerland"
 linkedin: "www.linkedin.com/in/zhenggongcfa"
 github: "github.com/ZhengGong-hub"
 address: "Dammstrasse 2, 8180, Bulach"
+# the edu1 will be displayed first
+edu1:
+  name: "University of St. Gallen"
+  time: "2024.9 - 2028 (expected)"
+  title: "External Ph.D Student in Finance"
+  city: "Switzerland"
+edu2:
+  name: "ETH Zurich"
+  time: "2015 - 2018"
+  title: "MSc in Mathematics"
+  city: "Switzerland"
+edu3:
+  name: "Jilin University"
+  time: "2011 - 2015"
+  title: "BSc in Mathematics"
+  city: "China"
 work1:
   name: "KEYONIQ Technologies AG"
   time: "2023.1 - 2025.8"

@@ -46,6 +46,7 @@ Prefer concrete metrics. Do NOT invent facts. Return strict JSON."""
                 Please rank and rewrite (shorten, tailor, etc.) the work experience contents based on the job description summary and the work experience bullet points.
                 Note that the first bullet point must describe the company.
                 Do not invent facts.
+                Make sure the text is formatted in LaTeX.
 
                 {add_prompt}
 

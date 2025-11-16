@@ -19,10 +19,23 @@ def run(state: State, config: dict) -> State:
     logger.info("Assembling final sections...")
 
     work_indices = config.get("work_experience").keys()
-    assembled = dict.fromkeys(work_indices, [])
+    education_indices = config.get("edu_experience").keys()
+    assembled = dict.fromkeys(list(work_indices) + list(education_indices), [])
+
+    # work experience
     for work in work_indices:
         text = [item["text"] for item in state['ranked'][work]['selected']]
         assembled[work] = text
+
+    # education
+    for education in education_indices:
+        text = [item["text"] for item in state['ranked'][education]['selected']]
+        assembled[education] = text
+
+    # skills
+    # TODO: implement skills assembly
+
     state['assembled'] = assembled
     logger.info(f"Assembled {len(assembled)} items")
+
     return state
