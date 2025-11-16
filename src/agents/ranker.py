@@ -4,6 +4,7 @@ from adapters.llm_openai import OpenAIClient
 from infra.logging import setup_logger
 from utils.work_experience_ranker import rank_and_select_work_experience
 from utils.edu_experience_ranker import rank_and_select_edu_experience
+from utils.skill_experience_ranker import rank_and_select_skill
 
 logger = setup_logger(__name__)
 
@@ -23,7 +24,11 @@ def run(state: State, config: dict) -> State:
 
     work_indices = config.get("work_experience").keys()
     edu_indices = config.get("edu_experience").keys()
-    ranked = dict.fromkeys(list(work_indices) + list(edu_indices), [])
+    ranked = dict.fromkeys(list(work_indices) + list(edu_indices) + ["skills"], [])
+
+    #  ----- skills contents ----- #
+    selected = rank_and_select_skill(state, config)
+    ranked["skills"] = {"selected": selected}
 
     #  ----- work experience contents ----- #
     for work in work_indices:

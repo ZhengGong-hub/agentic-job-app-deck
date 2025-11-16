@@ -33,7 +33,7 @@ def run(state: State, config: dict) -> State:
         assembled[education] = text
 
     # skills
-    # TODO: implement skills assembly
+    assembled['skills'] = state['ranked']['skills']['selected']
 
     state['assembled'] = assembled
     logger.info(f"Assembled {len(assembled)} items")

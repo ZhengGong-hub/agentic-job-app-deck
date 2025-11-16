@@ -1,79 +1,70 @@
-Quantitative Trader
-DRW · Singapore, Singapore (On-site)
+DeepRec.ai logo
+DeepRec.ai
+Share
+Show more options
+GenAI Engineer
+Zurich, Switzerland · 4 days ago · Over 100 applicants
+Promoted by hirer · Actively reviewing applicants
+ 
+On-site
 
-Apply
+ Full-time
+Matches your job preferences, job type is Full-time.
+
+Easy Apply
  
 Save
-Save Quantitative Trader  at DRW
+Save GenAI Engineer at DeepRec.ai
+GenAI Engineer
+DeepRec.ai · Zurich, Switzerland (On-site)
+
+Easy Apply
+ 
+Save
+Save GenAI Engineer at DeepRec.ai
 Show more options
-See recent hiring trends for DRW Holdings, LLC
 
-Access exclusive applicant insights, see jobs where you have the highest chance of hearing back, and more.
+Your AI-powered job assessment
 
-Retry Premium for CHF0
-People you can reach out to
-ETH Zürich logo
-ETH Zürich logo
-School alumni from ETH Zürich
 
-Show all
+
+Am I a good match?
+
+Tailor my resume
+
+How can I best position myself?
+
+Meet the hiring team
+
+Nathan Wills
+Nathan Wills  
+ 1st
+Principal Recruitment Consultant | ML & R&D Talent | Supporting Startups & Enterprises Across Europe and US
+Job poster · 9 mutual connections
+
+Message
 About the job
-DRW is a diversified trading firm with over 3 decades of experience bringing sophisticated technology and exceptional people together to operate in markets around the world. We value autonomy and the ability to quickly pivot to capture opportunities, so we operate using our own capital and trading at our own risk.
-
-We operate with respect, curiosity and open minds. The people who thrive here share our belief that it’s not just what we do that matters–it's how we do it. DRW is a place of high expectations, integrity, innovation and a willingness to challenge consensus.
-
-Cumberland - a DRW Company is the cryptoasset arm of DRW, established in 2014 after early interest in cryptoassets and their underlying technology. Today, Cumberland is a global leader in cryptoassets, uniquely positioned between the traditional financial markets and the cryptoasset ecosystem. From our offices around the world, we provide 24-hour access to a wide array of cryptoassets while helping the crypto ecosystem grow and evolve in a responsible, sustainable way.
-
-As a Cryptoassets Trader, you will have an opportunity to combine the disciplines of risk management, research and technology to execute cryptoasset trading strategies. You will be tasked with managing counterparty relationships and executing trades. You will work closely with experienced traders, business development teams and quantitative researchers to help identify trading opportunities and manage the cryptoasset portfolio.
-
-What You’ll Do In This Role
-
-Assist with management of OTC trading flow from new and existing counterparties
-Execute cryptoasset trades electronically and manually
-Assist in managing and optimizing the risk of the cryptoasset portfolio
-Work directly with other DRW traders and cryptoasset researchers to gain market knowledge and expertise
-Communicate closely with our other offices on varying workflow initiatives and trades
-Identify and capture current opportunities
-Research and introduce new trading strategies
-Work with a variety of internal teams (research, relationship management, operations, etc.) to ensure proper trade flow and settlement
-Monitor open positions and execution in our trading systems
-Adjust system parameters based on market conditions
-Communicate relevant market events to team members
-Contribute to all aspects of the trading desk activities including position reconciliation, risk management tasks and post-trade analysis
-
-Requirements
-
-BS, MS, and/or PhD with strong academic results in Mathematics, Statistics, Physics, Science, Engineering, or Computer Science
-Market making experience for crypto currency on exchange or bilaterally
-Previous screen trading or trading assistant experience
-Strong quantitative and analytical skills
-Meticulous attention to details and accuracy in work
-Excellent verbal and written communication skills, with the ability to effectively interact with counterparties and internal stakeholders
-Ability to adapt in a fast-paced, collaborative, and results-oriented environment, and thrive under time-sensitive and high-pressure situations
-Self-starter with strong proactivity, sets ambitious goals, willingness to drive and own projects, and proactively identifies opportunities for impact
-
-Bonus Points For
-
-Experience with liquidity provisioning on dex
-A passion for cryptoassets and the role they play in global markets
-
-Why Join DRW-Cumberland
-
-At DRW-Cumberland, we are committed to creating a workplace that inspires and empowers our employees with impactful responsibilities quickly. You will have the opportunity to be creative and entrepreneurial to solve fascinating problems, capture valuable opportunities, and directly influence the future of the business. Our collaborative environment promotes innovation and continuous learning, making DRW-Cumberland a dynamic place to grow your career.
-
-If you are ready to take on this exciting challenge, apply now and become a part of our forward-thinking team at DRW-Cumberland.
-
-For more information about DRW's processing activities and our use of job applicants' data, please view our Privacy Notice at https://drw.com/privacy-notice.
-
- California residents, please review the California Privacy Notice for information about certain legal rights at https://drw.com/california-privacy-notice.
-
-Job search faster with Premium
-
-Access company insights like strategic priorities, headcount trends, and more
-
-
-
-
-Khaliunaa and millions of other members use Premium
-Retry Premium for CHF0
-Get 1 month free. Cancel anytime. 
+We are looking for a GenAI Engineer to join a growing Consulting organisation focused on AI solutions for the varied industries.
+ You will play a key role in developing and integrating enterprise-level AI systems, contributing to the next generation of intelligent tools used by their clients.
+ What You’ll Do
+Design, build, and deploy GenAI applications using OpenAI APIs and LLM frameworks
+Develop and optimise RAG pipelines for production use
+Collaborate with cross-functional teams to integrate AI into existing SaaS products
+Write clean, efficient, and scalable code, primarily in Python
+Contribute to architecture and design discussions around AI deployment and automation
+Engage with clients and internal teams to ensure alignment on project goals
+What We’re Looking For
+Proven background in software development within SaaS or enterprise environments
+Strong practical experience using OpenAI APIs in commercial or large-scale settings
+Solid understanding of LLMs, prompt engineering, and model deployment
+Hands-on experience with RAG pipelines and data retrieval optimisation
+Excellent communication and stakeholder management skills
+Able to work independently and within collaborative teams
+Nice to Have
+French for collaboration with teams in Lausanne
+German for client interactions in Zurich
+Why Join
+Fully remote flexibility with the option to work near Zurich or Lausanne
+Stable, long-term AI projects within the financial sector
+Clear growth trajectory with opportunities to contribute to upcoming initiatives
+Supportive, collaborative environment with positive team sentiment

@@ -107,6 +107,7 @@
 \begin{jobshort}{\textbf {{ profile[edu_key]['title'] }}\normalfont, {{ profile[edu_key]['name'] }}, {{ profile[edu_key]['city'] }}}{\normalfont {{ profile[edu_key]['time'] }}}\end{jobshort} {% endif %} {% endfor %}
 
 \section*{Skills}
-
+{% for item in selected['skills'] %}
+\begin{jobshort}{\textbf {{ item['categories'] }}  \normalfont {{ item['text'] }}}{}\end{jobshort}{% endfor %}
 \end{document}
 
