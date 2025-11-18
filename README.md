@@ -9,6 +9,12 @@ An LLM-powered system for generating tailored resumes and cover letters based on
 uv sync
 ```
 
+if uv is not installed:
+```bash
+pip install uv
+python -m uv sync
+```
+
 2. Set up your OpenAI API key:
    - Copy the example API key file:
      ```bash
@@ -25,6 +31,11 @@ uv sync
 Generate a resume:
 ```bash
 uv run src/run.py -cv
+```
+
+or
+```
+python -m uv run src/run.py
 ```
 
 Generate a cover letter:

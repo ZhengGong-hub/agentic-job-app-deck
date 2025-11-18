@@ -36,7 +36,8 @@ def main():
 
     # for each unique run, create a new out directory under the out directory
     out_dir = Path(config.get("paths").get("out_dir")) / str(datetime.now().strftime("%Y%m%d_%H%M%S"))
-    config.get("paths")["out_dir"] = out_dir 
+    out_dir.mkdir(parents=True, exist_ok=True)
+    config.get("paths")["out_dir"] = out_dir
 
     logger.info(f"Loaded configuration with type: {tailoring_type}")
     
