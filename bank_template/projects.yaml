@@ -1,0 +1,26 @@
+# Projects Template
+# Describe your personal and professional projects
+
+- id: proj_1
+  section: Projects
+  text: "Brief description of project 1, including technologies used and impact or metrics"
+  tags: [technology1, technology2, impact]
+  priority: 0.9
+
+- id: proj_2
+  section: Projects
+  text: "Brief description of project 2, with key accomplishments and technical stack"
+  tags: [technology3, technology4]
+  priority: 0.8
+
+- id: proj_3
+  section: Projects
+  text: "Brief description of project 3, highlighting problem solved and results achieved"
+  tags: [technology5, domain]
+  priority: 0.75
+
+- id: proj_4
+  section: Projects
+  text: "Brief description of project 4, with brief explanation and technologies"
+  tags: [technology6, category]
+  priority: 0.7

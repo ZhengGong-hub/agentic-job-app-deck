@@ -1,0 +1,22 @@
+# Skills Template
+# Add your technical and professional skills organized by category
+
+- id: skill_1
+  text: "Programming language 1, Programming language 2, Tool 1, Tool 2"
+  tags: [programming, languages]
+  category: "Programming Languages"
+
+- id: skill_2
+  text: "Framework 1, Library 1, Library 2, Tool 3"
+  tags: [frameworks, libraries]
+  category: "Frameworks & Libraries"
+
+- id: skill_3
+  text: "Platform 1, Service 1, Database 1, Tool 4"
+  tags: [cloud, infrastructure]
+  category: "Cloud & Infrastructure"
+
+- id: skill_4
+  text: "Domain expertise 1, Domain expertise 2, Methodology 1"
+  tags: [domain, expertise]
+  category: "Domain Expertise"
