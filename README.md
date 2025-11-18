@@ -26,6 +26,24 @@ python -m uv sync
      ```
    - The `.apikey` file is automatically loaded and is **not** committed to version control (listed in `.gitignore`)
 
+3. Create your personal profile (first time setup):
+   ```bash
+   python setup.py
+   ```
+   This interactive script will guide you through:
+   - Personal & professional profile (name, contact, education, work experience)
+   - Skills and expertise
+   - Achievements and recognitions
+   - Projects and portfolio
+   - Work experience details
+   - Education details
+   - Cover letter narratives
+   - Potential concerns and how you address them
+
+   **Note:** Your personal data is saved to `bank/` and `cl_bank/` directories, which are listed in `.gitignore` and never committed to GitHub.
+
+   **Reference Templates:** Check `bank_template/` and `cl_bank_template/` for examples of the YAML structure if you prefer to edit files directly instead of using the interactive setup.
+
 ## Usage
 
 Generate a resume:

@@ -1,0 +1,22 @@
+# Stumbling Blocks Template
+# Potential concerns a recruiter might have and context to address them
+
+- id: sb_1
+  text: "Potential concern: [Describe a concern recruiter might have about your background] — [Provide context that addresses this concern without being defensive]"
+  tags: ["concern category"]
+
+- id: sb_2
+  text: "Potential concern: [Describe another potential concern] — [Provide evidence or explanation that mitigates this concern]"
+  tags: ["concern category"]
+
+- id: sb_3
+  text: "Potential concern: [Describe a third concern] — [Explain how your background actually addresses this]"
+  tags: ["concern category"]
+
+- id: sb_4
+  text: "Potential concern: [Describe a fourth concern about fit or experience] — [Demonstrate why this concern is unfounded with specific examples]"
+  tags: ["concern category"]
+
+- id: sb_5
+  text: "Potential concern: [Describe a final concern] — [Frame your experience as an advantage rather than a liability]"
+  tags: ["concern category"]

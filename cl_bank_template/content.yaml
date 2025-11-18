@@ -1,0 +1,22 @@
+# Cover Letter Content Template
+# Narrative elements and stories about your background and motivations
+
+- id: cl_1
+  text: "Tell your background story. What got you interested in your field? How did your journey begin? Connect your early interests to your current professional identity."
+  tags: [background and motivation]
+
+- id: cl_2
+  text: "Describe how you bridge different domains or disciplines. What skills from different areas do you combine? How do you see yourself as a connector between different worlds?"
+  tags: [bridge-building narrative]
+
+- id: cl_3
+  text: "Share your philosophy or perspective on your field. What do you believe about the importance of your work? Why does it matter to you beyond just the job?"
+  tags: [philosophy and purpose]
+
+- id: cl_4
+  text: "Describe your experience building or executing projects. What have you accomplished? What impact did you create? Share concrete examples of your work."
+  tags: [experience and impact]
+
+- id: cl_5
+  text: "Explain what drives you in your work. What's your approach to solving problems? How do you think about the balance between theory/research and practical implementation?"
+  tags: [philosophy on work approach]

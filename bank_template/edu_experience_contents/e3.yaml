@@ -1,0 +1,14 @@
+# Education Experience 3 Template
+# Details about your BSc or earlier degree and achievements
+
+- id: exp_1
+  text: |
+    Describe awards, scholarships, or special recognitions you received during your undergraduate studies.
+
+- id: exp_2
+  text: |
+    Describe competitions, projects, or achievements that were notable.
+
+- id: exp_3
+  text: |
+    Describe any additional accomplishments, fellowships, or honors from this period.

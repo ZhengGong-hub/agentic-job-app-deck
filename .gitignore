@@ -139,6 +139,10 @@ celerybeat.pid
 .envrc
 .apikey
 .venv
+
+# Personal data (use bank_template and cl_bank_template to create your own)
+bank/
+cl_bank/
 env/
 venv/
 ENV/

@@ -29,6 +29,21 @@ def main():
     generate_cv = args.generate_cv
     generate_cover_letter = args.cover_letter
     tailoring_type = args.type  # either 'tech' or 'business'
+
+    # If neither option is specified, ask the user
+    if not generate_cv and not generate_cover_letter:
+        print("\nWhat would you like to generate?")
+        print("1. CV (Resume)")
+        print("2. Cover Letter")
+        choice = input("Enter your choice (1 or 2): ").strip()
+
+        if choice == "1":
+            generate_cv = True
+        elif choice == "2":
+            generate_cover_letter = True
+        else:
+            print("Invalid choice. Please enter 1 or 2.")
+            sys.exit(1)
     
     # Load configuration
     config = load_config("config.yaml")
@@ -68,30 +83,36 @@ def main():
         "meta": {"retry_count": 0, "errors": []},
     }
 
+    final_state = None
+
     if generate_cover_letter:
         logger.info("Generating cover letter...")
-        
+
         # Compile and run cover letter graph
         logger.info("Compiling cover letter graph...")
         graph = create_cover_letter_graph(config)
-        
+
         logger.info("Running cover letter pipeline...")
         final_state = graph.invoke(state)
+        logger.info(f"Exported cover letter to: {out_dir / 'cover_letter.tex'}")
 
-
-    if generate_cv:        
+    if generate_cv:
         # Compile and run resume graph
         logger.info("Compiling resume graph...")
         graph = create_cv_graph(config)
-        
+
         logger.info("Running resume pipeline...")
         final_state = graph.invoke(state)
-                
+
         logger.info(f"Exported resume to: {out_dir / 'resume.tex'}")
 
     # save the final_state to a yaml file
-    with open(out_dir / "final_state.yaml", "w") as f:
-        yaml.dump(final_state, f)
+    if final_state:
+        with open(out_dir / "final_state.yaml", "w") as f:
+            yaml.dump(final_state, f)
+        logger.info(f"Saved state to: {out_dir / 'final_state.yaml'}")
+    else:
+        logger.error("No output generated. final_state is None.")
 
 if __name__ == "__main__":
     main()

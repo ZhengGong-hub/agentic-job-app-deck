@@ -1,0 +1,42 @@
+# Profile Template
+# Fill in your personal and professional information
+
+name: "Your Full Name"
+email: "your.email@example.com"
+phone: "+XX XXXXXXXXX"
+location: "City, Country"
+linkedin: "linkedin.com/in/yourprofile"
+github: "github.com/yourprofile"
+address: "Your Address, City, Postal Code"
+
+# Education - edu1 will be displayed first
+edu1:
+  name: "University Name"
+  time: "YYYY - YYYY"
+  title: "Degree Name (e.g., PhD in Computer Science)"
+  city: "City"
+
+edu2:
+  name: "University Name"
+  time: "YYYY - YYYY"
+  title: "Degree Name (e.g., MSc in Mathematics)"
+  city: "City"
+
+edu3:
+  name: "University Name"
+  time: "YYYY - YYYY"
+  title: "Degree Name (e.g., BSc in Physics)"
+  city: "City"
+
+# Work Experience
+work1:
+  name: "Company Name"
+  time: "YYYY.M - YYYY.M"
+  title: "Job Title"
+  city: "City"
+
+work2:
+  name: "Company Name"
+  time: "YYYY.M - YYYY.M"
+  title: "Job Title"
+  city: "City"

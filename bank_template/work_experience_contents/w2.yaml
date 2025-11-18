@@ -1,0 +1,28 @@
+# Work Experience 2 Template
+# Details about your previous work experience
+
+- id: exp_1
+  text: |
+    Describe the company and your role. What does the company do? What was your primary responsibility?
+  tags: ["company description"]
+
+- id: exp_2
+  text: |
+    Describe your first major achievement or responsibility.
+    Include specific technologies, methods, or approaches you used.
+  tags: ["hard skills", "technology tags"]
+
+- id: exp_3
+  text: |
+    Describe another significant accomplishment or project you led or contributed to.
+  tags: ["project", "impact"]
+
+- id: exp_4
+  text: |
+    Describe leadership or collaboration aspects of your role.
+  tags: ["soft skills", "leadership"]
+
+- id: exp_5
+  text: |
+    Describe any measurable impact, metrics, or business results you achieved.
+  tags: ["business impact", "metrics"]

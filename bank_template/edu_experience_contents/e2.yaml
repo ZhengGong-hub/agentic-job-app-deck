@@ -1,0 +1,12 @@
+# Education Experience 2 Template
+# Details about your MSc or second degree
+
+- id: exp_1
+  text: |
+    Describe your thesis, research project, or major accomplishment during this degree.
+    Include the title and brief description of what you studied or achieved.
+
+- id: exp_2
+  text: |
+    Mention your advisors/supervisors and any special recognition or grades you received.
+    Describe how this education shaped your professional direction.

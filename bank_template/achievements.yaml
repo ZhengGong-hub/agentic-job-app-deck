@@ -1,0 +1,26 @@
+# Achievements Template
+# List your notable accomplishments, awards, and recognitions
+
+- id: ach_1
+  section: Achievements
+  text: "Describe your first major achievement or award"
+  tags: [category, topic]
+  priority: 0.9
+
+- id: ach_2
+  section: Achievements
+  text: "Describe your second major achievement or award"
+  tags: [category, topic]
+  priority: 0.8
+
+- id: ach_3
+  section: Achievements
+  text: "Describe your third achievement or recognition"
+  tags: [category, topic]
+  priority: 0.8
+
+- id: ach_4
+  section: Achievements
+  text: "Describe another relevant achievement"
+  tags: [category, topic]
+  priority: 0.75
