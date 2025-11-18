@@ -225,3 +225,6 @@ out/*
 
 
 personal_data/*
+
+bank/
+cl_bank/
