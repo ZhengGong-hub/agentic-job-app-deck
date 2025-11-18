@@ -4,7 +4,7 @@ import os
 from typing import Dict, Any, Optional
 from openai import OpenAI
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv(dotenv_path=".apikey")
 
 
 class OpenAIClient:

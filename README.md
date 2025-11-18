@@ -10,9 +10,15 @@ uv sync
 ```
 
 2. Set up your OpenAI API key:
-```bash
-export OPENAI_API_KEY=your_api_key_here
-```
+   - Copy the example API key file:
+     ```bash
+     cp .apikey.example .apikey
+     ```
+   - Edit `.apikey` and add your OpenAI API key (get it from https://platform.openai.com/api-keys):
+     ```
+     OPENAI_API_KEY=your_actual_api_key_here
+     ```
+   - The `.apikey` file is automatically loaded and is **not** committed to version control (listed in `.gitignore`)
 
 ## Usage
 

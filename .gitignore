@@ -137,6 +137,7 @@ celerybeat.pid
 # Environments
 .env
 .envrc
+.apikey
 .venv
 env/
 venv/
@@ -217,3 +218,6 @@ __marimo__/
 *.fls 
 *.fdb_latexmk
 out/*
+
+
+personal_data/*
